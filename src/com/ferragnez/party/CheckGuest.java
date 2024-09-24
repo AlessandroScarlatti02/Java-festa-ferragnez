@@ -11,21 +11,21 @@ public class CheckGuest {
 		
 		Scanner scan = new Scanner(System.in);
 		String name;
-		//int i=0;
+		int i=0;
 		int flag=0;
 		System.out.println("Inserisci il tuo nome e cognome");
 		name = scan.nextLine();
 		
-		for (int i = 0; i < invitedList.length; i++) {
-			if (name==invitedList[i]) {
+		for (i = 0; i < invitedList.length; i++) {
+			if (name.equalsIgnoreCase(invitedList[i])) {
 				flag=1;	
 			} 
 			
 			//do {
-				//if (name==invitedList[i]) {
+				//if (nameequalsIgnoreCase(invitedList[i])) {
 					//flag=1;	
-					//i++;
 				//}
+			//i++;
 			//} while (i< invitedList.length);
 			
 		}
